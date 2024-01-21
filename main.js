@@ -47,7 +47,7 @@ let clicked = (e)=>{
         // draw checking
         if(click === 9 && winngingCheck() !== 1 && winngingCheck() !== 2){
             dash.innerText = "Draw"
-            setTimeout(reset(),3000)
+            setTimeout(reset,3000)
         }
         // winning checking every move
         if(winngingCheck() === 1){
@@ -56,14 +56,14 @@ let clicked = (e)=>{
             dash.innerText = "X is the winner"
             score.children[0].innerText = `X=${x}`
             //reset function for x
-            setTimeout(reset(),3000)
+            setTimeout(reset,3000)
         }else if(winngingCheck() === 2){
             o++
             remove();
             dash.innerText = "O is the winner"
             score.children[1].innerText = `O=${o}`
             //reset function for o
-            setTimeout(reset(),3000)
+            setTimeout(reset,3000)
         }
     }
 }
@@ -87,7 +87,6 @@ function winngingCheck(){
             }
         }
         if (X === 3){
-            console.log("X is winning")
             three.forEach((ele)=>ele.style.backgroundColor = "lightblue");
             return 1;
         }
@@ -103,7 +102,6 @@ function winngingCheck(){
             }
         }
         if (O === 3){
-            console.log("O is winning")
             three.forEach((ele)=>ele.style.backgroundColor = "lightblue");
             return 2;
         }
