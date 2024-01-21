@@ -52,6 +52,6 @@ body{
 @media (max-width: 768px){
     .game{
         width: 80%;
-        height: 80%;
+        height: 50%;
     }
 }
