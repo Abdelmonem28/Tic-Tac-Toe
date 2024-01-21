@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game{
+    width: 50%;
+    height: 80%;
+}
+#dash{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+#score{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+#score span{
+    display: inline-block;
+}
+
+.box{
+    display: inline-block;
+    width: calc((100% / 3 ) - 6px);
+    height: calc((100% / 3 ) - 6px);
+    border: 1px black solid;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.box span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 24px;
+    font-weight: bold;
+}
