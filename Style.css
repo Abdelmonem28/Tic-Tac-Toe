@@ -11,6 +11,10 @@ body{
     height: 100vh;
 }
 
+.winning-color{
+    background-color: lightblue;
+}
+
 .game{
     width: 50%;
     height: 80%;
